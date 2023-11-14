@@ -1,0 +1,244 @@
+:root {
+    --main-bgcoloralph: rgb(0, 0, 0);
+    --main-bgcolor: rgb(255, 255, 255);
+    --main-color: rgb(0, 0, 0);
+    --main-url: url(./assite/backgroundark5.jpg);
+}
+
+*::selection {
+    background: var(--main-bgcolor);
+    color: var(--main-bgcoloralph);
+}
+
+li:hover {
+    color: var(--main-bgcoloralph);
+}
+
+body {
+    background: var(--main-bgcolor);
+    /* width: 100%; */
+    color: var(--main-color);
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+#title {
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    color: var(--main-bgcoloralph);
+}
+
+.nav-link {
+    color: var(--main-color);
+}
+
+@keyframes start {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating {
+    animation: float2 3s ease-in-out infinite;
+}
+
+.floating2 {
+    animation: float 3s ease-in-out infinite;
+}
+
+.typing {
+    overflow: hidden;
+    width: fit-content;
+    /* Hide overflowing text */
+
+    /* Create a typing cursor */
+
+    /* Make text appear on one line */
+    animation: typing 1s steps(30, end) 1;
+}
+
+@keyframes typing {
+    0% {
+        border-right: 1px solid var(--main-bgcolor);
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+        /* Fully display the text */
+        border-color: var(--main-bgcolor);
+        border-right: 0px solid var(--main-bgcolor);
+        /* Show the typing cursor at the end */
+    }
+}
+
+#mainImg {
+    object-fit: cover;
+}
+
+button.navbar-toggler.btn {
+    border: none;
+}
+
+.fa-bars:before,
+.fa-navicon:before {
+    color: var(--main-color);
+}
+
+.personalIMg {
+    position: relative;
+}
+
+.personalIMg #cloudear {
+    position: absolute;
+    bottom: -21px;
+    right: -100px;
+    width: 100px;
+    font-size: 200px;
+    animation: float 4s ease-in-out infinite;
+}
+
+
+.personalIMg #cloude2ar {
+    position: absolute;
+    bottom: -40px;
+    left: 50px;
+    width: -100px;
+    font-size: 200px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.personalIMg #cloude {
+    position: absolute;
+    bottom: -30px;
+    left: -70px;
+    width: 100px;
+    font-size: 200px;
+    animation: float 4s ease-in-out infinite;
+}
+
+
+.personalIMg #cloude2 {
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    font-size: 200px;
+    animation: float 6s ease-in-out infinite;
+}
+
+
+#border {
+    height: 25px;
+    width: 100px;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--main-bgcoloralph);
+}
+
+#borderRange {
+    width: 90px;
+    height: 25px;
+    z-index: 1000;
+    background: var(--main-color);
+    animation: start 500ms ease-in-out 1;
+}
+
+.cls-1 {
+    fill: var(--main-color) !important;
+    width: 10px;
+}
+
+.cls-2 {
+    fill: var(--main-bgcolor) !important;
+    width: 10px;
+}
+
+.cls-3 {
+    fill: white;
+}
+
+
+.col-lg-3 {
+    background: radial-gradient(#ffffff00, rgb(255 255 255 / 10%));
+    backdrop-filter: blur(60px);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.card.text-bg-dark.mb-3.rounded-5.border-0.shadow-lg.floating {
+    backdrop-filter: blur(60px) !important;
+    border-radius: 15px !important;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5) !important;
+}
+
+
+section#skills {
+    background: var(--main-url);
+    background-attachment: fixed;
+}
+
+#color_mode,
+.nav-link,
+.dropdown-toggle {
+    color: var(--main-color) !important;
+}
+
+#color_mode:hover,
+.nav-link:hover,
+.dropdown-toggle:hover {
+    color: var(--main-bgcoloralph) !important;
+}
+
+#imgif .row,
+#langues .row {
+    border: 2px solid;
+    border-radius: 20px;
+    margin-bottom: 120px;
+    padding: 20px;
+    box-shadow: 10px 10px 0px 0px;
+    transition: 1s all;
+    transition: all 1s ease-in-out;
+}
